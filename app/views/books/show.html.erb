@@ -1,0 +1,11 @@
+<main class="show-page">
+<p class="notice"><%= flash.notice %></p>
+<div class="show-main">
+  <p class="show-main-name"><strong>Title: </strong><%= @book.title %></p>
+  <p class="show-main-name"><strong>Body: </strong> <%= @book.body %></p>
+</div>
+</main>
+
+<%= link_to 'Edit', edit_book_path(@book) %>
+<%="|" %>
+<%= link_to 'Back', books_path %>
